@@ -1,10 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>BCGDV Landing Page Workshop</title>
-  </head>
-  <body>
-    <h1>BCGDV Landing Page Workshop</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="highlight.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+  <div id="banner">
+    <h1>DV Landing Page Workshop</h1>
+    <p>Build your landing page in 1 hour</p>
+    <a href="#start" class="btn btn-primary">Start</a>
+  </div>
+
+  <div class="container" id="start">
+    <div class="row">
+      <div class="col-12">
+        <div class="step">
+          <div class="step-title">
+            <h2>1. Let's setup</h2>
+          </div>
+
+          <ol class="step-instructions">
+            <li>Start Sublime Text. It will open a new black window</li>
+            <li>Create a <strong>folder</strong> <code>landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window</li>
+            <li>In Sublime Text left navigation:
+              <ul>
+                <li>Right click <strong>"New File"</strong></li>
+                <li>Save it as <code class="single">index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+                <li>Do the same to create a <code class="single">style.css</code> file</li>
+                <li>Then <strong>"New Folder"</strong> and create an <code class="single">images</code> folder</li>
+              </ul>
+            </li>
+            <li>Finally double click on <code class="single">index.html</code> to open it with Chrome</li>
+          </ol>
+
+          <img src="images/screen1.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="step">
+          <div class="step-title">
+            <h2>2. Add some content</h2>
+          </div>
+
+          <ol class="step-instructions">
+            <li>To save time, right-click on <strong>4</strong> of the following images and save them in your images folder. These will be your product feature icons, so choose wisely!</li>
+            <ul class="list-inline icons">
+              <li class="list-inline-item"><img src="images/bear.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/briefcase.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/calendar.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/chat.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/diamond.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/flash.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/gift.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/heart.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/home.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/lock.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/spaceship.svg" alt=""></li>
+              <li class="list-inline-item"><img src="images/world.svg" alt=""></li>
+            </ul>
+            <li>Then start with this HTML code in <code class="single">index.html</code></li>
+          </ol>
+          <pre>
+            <code class="html multi">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;My Venutre Landing Page&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;My New Venture&lt;/h1&gt;
+    &lt;p&gt;This is a very important introductory line!&lt;/p&gt;
+    &lt;a href=&quot;&quot;&gt;Explore&lt;/a&gt;
+
+    &lt;img src=&quot;images/briefcase.svg&quot; alt=&quot;picture description&quot; width=&quot;100&quot;&gt;
+    &lt;h2&gt;Serious&lt;/h2&gt;
+    &lt;p&gt;A serious app, &lt;strong&gt;very serious&lt;/strong&gt; app&lt;/p&gt;
+
+    &lt;img src=&quot;images/diamond.svg&quot; alt=&quot;picture description&quot; width=&quot;100&quot;&gt;
+    &lt;h2&gt;Elegant&lt;/h2&gt;
+    &lt;p&gt;An elegant app, &lt;strong&gt;very elegant&lt;/strong&gt; app&lt;/p&gt;
+
+    &lt;img src=&quot;images/chat.svg&quot; alt=&quot;picture description&quot; width=&quot;100&quot;&gt;
+    &lt;h2&gt;Social&lt;/h2&gt;
+    &lt;p&gt;A social app, &lt;strong&gt;very social&lt;/strong&gt; app&lt;/p&gt;
+
+    &lt;img src=&quot;images/spaceship.svg&quot; alt=&quot;picture description&quot; width=&quot;100&quot;&gt;
+    &lt;h2&gt;Fast&lt;/h2&gt;
+    &lt;p&gt;A fast app, &lt;strong&gt;very fast&lt;/strong&gt; app&lt;/p&gt;
+
+    &lt;p&gt;This is the footer of my landing page built at BCGDV&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="step">
+          <div class="step-title">
+            <h2>3. Basic CSS styling</h2>
+          </div>
+
+          <ol class="step-instructions">
+            <li>Start Sublime Text. It will open a new black window</li>
+            <li>Create a <strong>folder</strong> <code class="single">landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window</li>
+            <li>In Sublime Text left navigation:
+              <ul>
+                <li>Right click <strong>"New File"</strong></li>
+                <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+                <li>Do the same to create a <code>style.css</code> file</li>
+                <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+              </ul>
+            </li>
+            <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="step">
+          <div class="step-title">
+            <h2>4. Intro to <code>&lt;div&gt;</code></h2>
+          </div>
+
+          <ol class="step-instructions">
+            <li>Start Sublime Text. It will open a new black window</li>
+            <li>Create a <strong>folder</strong> <code class="single">landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window</li>
+            <li>In Sublime Text left navigation:
+              <ul>
+                <li>Right click <strong>"New File"</strong></li>
+                <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+                <li>Do the same to create a <code>style.css</code> file</li>
+                <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+              </ul>
+            </li>
+            <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="step">
+          <div class="step-title">
+            <h2>5. Advanced CSS styling</h2>
+          </div>
+
+          <ol class="step-instructions">
+            <li>Start Sublime Text. It will open a new black window</li>
+            <li>Create a <strong>folder</strong> <code class="single">landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window</li>
+            <li>In Sublime Text left navigation:
+              <ul>
+                <li>Right click <strong>"New File"</strong></li>
+                <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+                <li>Do the same to create a <code>style.css</code> file</li>
+                <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+              </ul>
+            </li>
+            <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="step">
+          <div class="step-title">
+            <h2>6. Intro to Bootstrap</h2>
+          </div>
+
+          <ol class="step-instructions">
+            <li>Start Sublime Text. It will open a new black window</li>
+            <li>Create a <strong>folder</strong> <code class="single">landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window</li>
+            <li>In Sublime Text left navigation:
+              <ul>
+                <li>Right click <strong>"New File"</strong></li>
+                <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+                <li>Do the same to create a <code>style.css</code> file</li>
+                <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+              </ul>
+            </li>
+            <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

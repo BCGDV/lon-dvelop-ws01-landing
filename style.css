@@ -1,0 +1,107 @@
+/* RESET */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+code.single {
+  background-color: #f9f2f4;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+code.multi {
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+}
+
+ul, ol {
+  padding: 0 45px;
+}
+
+pre {
+  margin: 0;
+}
+
+/* BANNER */
+
+#banner {
+  height: 100vh;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/banner.png');
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+
+  margin-bottom: 50px;
+}
+
+#banner h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#banner p {
+  font-size: 30px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  opcaity: 0.7;
+}
+
+/* STEP */
+
+.step {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #FAFAFA;
+}
+
+.step .step-title {
+  color: white;
+  background-color: #333;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.step .step-instructions {
+  margin-bottom: 20px;
+}
+
+.step .step-instructions > li {
+  margin: 8px 0;
+}
+
+.step .step-instructions ul > li {
+  margin: 5px 0;
+}
+
+/* ICONS */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons img {
+  margin: 10px 14px;
+}
