@@ -70,6 +70,7 @@ pre {
   margin-bottom: 50px;
   padding: 20px;
   background-color: #FAFAFA;
+  box-shadow: 1px 1px 3px #F0F0F0;
 }
 
 .step .step-title {
